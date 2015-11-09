@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+
+<classPathEntry location="C:/Users/Administrator/.m2/repository/mysql/mysql-connector-java/5.1.30/mysql-connector-java-5.1.30.jar"/>
+
+  <context id="context1" >
+  
+	    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://127.0.0.1:3306/zhengzheng_ag?useUnicode=true&amp;characterEncoding=utf-8" userId="root" password="root" />
+		<javaModelGenerator targetPackage="model" targetProject="backend/src/main/java/" /> 
+		<sqlMapGenerator targetPackage="orm" targetProject="backend/src/main/resources/" />
+		<javaClientGenerator targetPackage="dao" targetProject="backend/src/main/java/" type="XMLMAPPER" />
+         
+    <table schema="zhengzheng_ag" tableName="member" domainObjectName="Member">
+			<generatedKey column="UID" sqlStatement="MySql" identity="true" />
+    </table>
+    <table schema="zhengzheng_ag" tableName="note" domainObjectName="Note">
+			<generatedKey column="UID" sqlStatement="MySql" identity="true" />
+	</table>
+     
+  </context>
+</generatorConfiguration>

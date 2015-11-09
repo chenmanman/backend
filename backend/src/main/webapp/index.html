@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-cn" >
+<head>
+    <meta charset="utf-8">
+    <title>backend</title>
+    <meta name="description" >
+    <link rel="shortcut icon" href="pic/psy_a.gif" type="image/gif" />
+
+    <link rel="stylesheet" href="css/uikit.docs.min.css">
+    <link rel="stylesheet" href="css/docs.css">
+    <link rel="stylesheet" href="css/highlight.css">
+
+</head>
+<body ng-app="app">
+
+<!--<div ng-include src="'header/header.html'">ee</div>-->
+<div class="container">
+    <div ng-view>
+    </div>
+</div>
+
+
+
+<script src="lib/angular/angular.min.js"></script>
+<script src="lib/angular/angular-route.min.js"></script>
+<script src="lib/uikit/jquery.js"></script>
+
+
+<script src="app/route.js"></script>
+
+<script src="app/controller/post.js"></script>
+
+<script>
+    $(function(){
+
+        $("body").on("click", ".uk-button[data-message]", function(){
+            UIkit.notify($(this).data());
+        });
+    })
+</script>
+
+</body>
+</html>
