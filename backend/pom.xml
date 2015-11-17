@@ -9,6 +9,7 @@
   <url>http://maven.apache.org</url>
   
   
+  
  <plugin>
     <groupId>org.mybatis.generator</groupId>
      <artifactId>mybatis-generator-maven-plugin</artifactId>
