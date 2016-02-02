@@ -33,7 +33,7 @@ public class MemberController {
 		
 		try {
 			
-			name=	memberService.GetMemberName("1");
+			name=	memberService.GetMemberName("wssw3261vo1449d708r57242481a92r5v");
 			System.out.println(name);
 			
 		} catch (Exception e) {

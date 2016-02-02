@@ -2,7 +2,7 @@
 <!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
 <generatorConfiguration >
 
-<classPathEntry location="C:/Users/Administrator/.m2/repository/mysql/mysql-connector-java/5.1.30/mysql-connector-java-5.1.30.jar"/>
+<classPathEntry location="/Users/chenyazheng/.m2/repository/mysql/mysql-connector-java/5.1.30/mysql-connector-java-5.1.30.jar"/>
 
   <context id="context1" >
   
@@ -11,12 +11,9 @@
 		<sqlMapGenerator targetPackage="orm" targetProject="backend/src/main/resources/" />
 		<javaClientGenerator targetPackage="dao" targetProject="backend/src/main/java/" type="XMLMAPPER" />
          
-    <table schema="zhengzheng_ag" tableName="member" domainObjectName="Member">
-			<generatedKey column="UID" sqlStatement="MySql" identity="true" />
-    </table>
-    <table schema="zhengzheng_ag" tableName="note" domainObjectName="Note">
-			<generatedKey column="UID" sqlStatement="MySql" identity="true" />
-	</table>
+	    <table schema="zhengzheng_ag" tableName="member" domainObjectName="Member">
+				<generatedKey column="UID" sqlStatement="MySql" identity="true" />
+	    </table>
      
   </context>
 </generatorConfiguration>
