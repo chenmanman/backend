@@ -9,9 +9,6 @@
   <url>http://maven.apache.org</url>
   
   
-  
-
-  
   <properties>
   		<org.springframework.version>4.0.2.RELEASE</org.springframework.version>
 		<jdk.version>1.7</jdk.version>
